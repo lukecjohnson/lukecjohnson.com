@@ -1,0 +1,12 @@
+# Build
+public/build
+
+# Dependencies
+node_modules
+
+# IDE
+.vscode
+.idea
+
+# macOS
+.DS_Store
