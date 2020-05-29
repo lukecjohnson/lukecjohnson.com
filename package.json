@@ -2,19 +2,11 @@
   "name": "lukecjohnson.com",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run watch-js & npm run watch-css",
-    "build": "npm run build-js && npm run build-css",
-    "build-js": "babel src/main.js --presets @babel/preset-env,minify -o public/build/main.js",
-    "build-css": "postcss --use autoprefixer cssnano --no-map -o public/build/main.css src/main.css",
-    "watch-js": "babel src/main.js -w --presets @babel/preset-env,minify -o public/build/main.js",
-    "watch-css": "postcss -w -u autoprefixer cssnano -o public/build/main.css src/main.css --no-map"
+    "start": "postcss -w -u autoprefixer cssnano -o public/build/main.css src/main.css --no-map",
+    "build": "postcss --use autoprefixer cssnano --no-map -o public/build/main.css src/main.css"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.1",
-    "@babel/preset-env": "^7.10.1",
     "autoprefixer": "^9.8.0",
-    "babel-preset-minify": "^0.5.1",
     "cssnano": "^4.1.10",
     "postcss-cli": "^7.1.1"
   }
