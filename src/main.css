@@ -72,7 +72,13 @@ p {
 ul {
   margin: 0;
   padding: 0;
+  line-height: 2;
   list-style-type: none;
+}
+
+li:before {
+  content: '\21B3';
+  margin-right: 0.25em;
 }
 
 a {
