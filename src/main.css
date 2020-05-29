@@ -48,6 +48,23 @@ main {
   max-width: 35rem;
 }
 
+main > * {
+  animation: entrance 800ms;
+  animation-fill-mode: both;
+}
+
+main > *:nth-child(1) {
+  animation-delay: 200ms;
+}
+
+main > *:nth-child(2) {
+  animation-delay: 400ms;
+}
+
+main > *:nth-child(3) {
+  animation-delay: 600ms;
+}
+
 p {
   margin: 0 0 2em;
 }
@@ -67,4 +84,15 @@ a {
 a:hover {
   background-color: #ffffff;
   color: #000000;
+}
+
+@keyframes entrance {
+  from {
+    opacity: 0;
+    transform: translateY(5vh);
+  }
+
+  to {
+    opacity: 1;
+  }
 }
