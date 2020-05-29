@@ -2,12 +2,15 @@
   "name": "lukecjohnson.com",
   "version": "1.0.0",
   "scripts": {
-    "start": "postcss -w -u autoprefixer cssnano -o public/build/main.css src/main.css --no-map",
-    "build": "postcss --use autoprefixer cssnano --no-map -o public/build/main.css src/main.css"
+    "start": "postcss src/main.css -o public/build/main.css --watch",
+    "build": "postcss src/main.css -o public/build/main.css"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
     "postcss-cli": "^7.1.1"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
