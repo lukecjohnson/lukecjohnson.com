@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "postcss src/main.css -o public/build/main.css --watch",
-    "build": "postcss src/main.css -o public/build/main.css"
+    "build": "postcss src/main.css -o public/build/main.css",
+    "deploy": "npm run build && firebase deploy"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
