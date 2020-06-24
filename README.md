@@ -1,4 +1,4 @@
-# lukecjohnson.com
+# [lukecjohnson.com](https://lukecjohnson.com)
 My personal site ― static, simple, kind of boring.
 
 ## Development
