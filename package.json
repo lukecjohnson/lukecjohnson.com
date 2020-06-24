@@ -1,6 +1,6 @@
 {
   "name": "lukecjohnson.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "open public/index.html && postcss src/main.css -o public/build/main.css --watch",
     "build": "postcss src/main.css -o public/build/main.css",
