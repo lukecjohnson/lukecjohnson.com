@@ -2,7 +2,7 @@
   "name": "lukecjohnson.com",
   "version": "1.0.0",
   "scripts": {
-    "start": "postcss src/main.css -o public/build/main.css --watch",
+    "start": "open public/index.html && postcss src/main.css -o public/build/main.css --watch",
     "build": "postcss src/main.css -o public/build/main.css",
     "deploy": "npm run build && firebase deploy"
   },
