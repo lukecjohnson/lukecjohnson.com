@@ -6,6 +6,7 @@ module.exports = {
       preset: [
         'default', 
         {
+          colormin: false,
           minifyFontValues: false,
           minifySelectors: false
         }
