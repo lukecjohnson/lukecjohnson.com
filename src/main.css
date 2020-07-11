@@ -18,11 +18,11 @@ html, body {
 
 body {
   margin: 0;
-  padding: clamp(2rem, 6vw, 6rem);
+  padding: 2rem;
   box-sizing: border-box;
   background-color: var(--background);
   color: var(--foreground);
-  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-size: 1.125rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   line-height: 1.75;
   text-rendering: optimizeLegibility;
@@ -30,24 +30,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@supports not (font-size: clamp(1rem, 2.5vw, 1.5rem)) {
+@media (min-width: 768px) {
   body {
-    padding: 6rem;
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 1024px) {
-    body {
-      font-size: 1.25rem;
-      padding: 4rem;
-    }
-  }
-  
-  @media (max-width: 512px) {
-    body {
-      padding: 2rem;
-      font-size: 1.125rem;
-    }
+    padding: 4rem;
+    font-size: 1.5rem;  
   }
 }
 
