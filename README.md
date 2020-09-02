@@ -1,14 +1,1 @@
-# [lukecjohnson.com](https://lukecjohnson.com)
-My personal site ― static, simple, kind of boring.
-
-## Development
-```
-$ npm i
-$ npm start
-```
-
-## Production
-The site is hosted with [Firebase](https://firebase.google.com/products/hosting) and is currently deployed manually via
-```
-$ npm run deploy
-```
+[lukecjohnson.com](https://lukecjohnson.com) ― very simple, very boring.
