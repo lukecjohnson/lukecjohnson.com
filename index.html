@@ -7,37 +7,28 @@
 
   <title>Luke Johnson</title>
   <meta name="description" content="A developer, occasional designer, and type design enthusiast living in Greenville, SC" />
-  
+
   <link rel="preconnect" href="https://www.google-analytics.com" />
   <link rel="icon" href="data:image/svg+xml,
     %3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E
       %3Ctext y=%22.9em%22 font-size=%2290%22%3E👨🏼‍💻%3C/text%3E
     %3C/svg%3E"
   />
-  
-  <style>
-    :root {
-      --background: rgb(255, 255, 255);
-      --foreground: rgb(0, 0, 0);
-      --foreground-opaque: rgb(0, 0, 0, 0.15);
-    }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --background: rgb(0, 0, 0);
-        --foreground: rgb(255, 255, 255);
-        --foreground-opaque: rgb(255, 255, 255, 0.25);
-      }
+  <style>
+    @font-face {
+      font-family: 'iA Writer Quattro';
+      src: url('/assets/iAWriterQuattroS-Regular.woff2');
     }
 
     body {
       margin: 0;
       padding: 2rem;
       box-sizing: border-box;
-      background-color: var(--background);
-      color: var(--foreground);
+      background-color: #f1f2f2;
+      color: #325e6d;
       font-size: 1.125rem;
-      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      font-family: 'iA Writer Quattro', sans-serif;
       line-height: 1.75;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -45,17 +36,17 @@
 
     @media (min-width: 768px) {
       body {
+        font-size: 1.25rem;
         padding: 4rem;
-        font-size: 1.5rem;  
       }
     }
 
-    main { 
+    main {
       max-width: 40rem;
     }
 
-    p { 
-      margin: 0 0 2em;
+    p {
+      margin: 0 0 1.5em;
     }
 
     ul {
@@ -65,15 +56,15 @@
       list-style-type: none;
     }
 
+    li::before {
+      content: '↳';
+      margin-right: 0.5rem;
+    }
+
     a {
       color: inherit;
       text-decoration: none;
-      border-bottom: 0.0625rem solid var(--foreground-opaque);
-      transition: all 250ms;
-    }
-
-    @media (hover: hover) {
-      a:hover { border-bottom-color: var(--foreground) }
+      border-bottom: 0.0625rem solid #325e6d;
     }
   </style>
 </head>
@@ -81,7 +72,7 @@
 <body>
   <main>
     <p>Hi ― I’m Luke Johnson, a developer, occasional designer, and type design enthusiast living in Greenville, SC.</p>
-    <p>I currently work at <a href="https://epandcompany.com" target="_blank" rel="noopener">EP+Co</a> with the Creative 
+    <p>I currently work at <a href="https://epandcompany.com" target="_blank" rel="noopener">EP+Co</a> with the Creative
       Technology team, building applications and interactive experiences for brands like Denny's, Verizon, and ESPN.</p>
     <ul>
       <li><a href="mailto:hi@lukecjohnson.com" target="_blank" rel="noopener">Email</a></li>
@@ -89,7 +80,6 @@
       <li><a href="https://linkedin.com/in/lukecjohnson" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
   </main>
-
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117114200-8"></script>
   <script>
