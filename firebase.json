@@ -1,9 +1,6 @@
 {
   "hosting": {
-    "public": ".",
-    "ignore": [
-      "!index.html"
-    ],
+    "public": "public",
     "rewrites": [
       {
         "source": "**",
